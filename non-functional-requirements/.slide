@@ -104,8 +104,7 @@ https://lukasrotermund.de
 
 ## Why is it so damn hard?
 
-- Product owner
-- Knows the domain
+- Product owner – <sub><sup>knows the domain</sup></sub>
 - NFR's are technically – <sub><sup>scalability, CQRS & eventual consistency, etc...</sup></sub>
 - Developers are responsible – <sub><sup>software architect, or someone who is aware of the NFR's</sup></sub>
   - ISO/IEC 9126
@@ -113,8 +112,8 @@ https://lukasrotermund.de
 ## Quality Attribute Scenarios
 
 - Define an **artifact** within an **environment** – <sub><sup>online shop within a mobile data speed of edge</sup></sub>
-- Stimulus on the system and its source – <sub><sup>user visits the products detail page</sup></sub>
-- System response and a measurable metric – <sub><sup>product details page in less than a second</sup></sub>
+- **Stimulus** on the system and its **source** – <sub><sup>user visits the products detail page</sup></sub>
+- System **response** and a **measurable metric** – <sub><sup>product details page in less than a second</sup></sub>
 
 <table>
   <thead>
