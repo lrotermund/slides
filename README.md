@@ -6,7 +6,7 @@ To use my slides install go's present tooling by running:
 go install golang.org/x/tools/cmd/present@latest
 ```
 
-Then change to the slide directory and run:
+Make sure that your GOPATH is set correctly, then change to the slide directory and run:
 
 ```sh
 present
