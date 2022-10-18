@@ -19,6 +19,138 @@ https://lukasrotermund.de
 
 - "Fast, no bugs, secure and best UX"
 
-.image https://media.giphy.com/media/QVP7DawXZitKYg3AX5/giphy.gif
+.image img/giphy/QVP7DawXZitKYg3AX5.gif
 
-## 
+## The money problem
+
+- No direct impact
+- No consideration
+- No requirements
+
+.image img/where-roi.jpg _ 500
+
+## How should we implement something?
+
+- Software quality attributes
+  - Usability
+  - Maintainability
+  - Reliability
+  - ...
+- Stack holder expectations
+
+## Ignoring non-functional requirements
+
+- The biggest and most expensive mistake
+- NFR requirements usually between 0 and 10%
+
+.image img/the-nfrs-are-coming.gif
+
+## In the short term
+
+- Ignoring NFR's will work
+- Long-term problems
+
+.image img/Marie-Elisabeth-Lüders-Haus.jpg _ 600
+.caption Marie Elisabeth Lüders Haus, the third new parliament building
+
+## ISO 9126 – software quality attributes
+
+- Functionality – <sub><sup>Accuracy, Compliance, Interoperability, Security, Suitability</sup></sub>
+- Reliability – <sub><sup>Recoverability, Maturity, Fault Tolerance</sup></sub>
+- Usability – <sub><sup>Learnability, Understandability, Operability</sup></sub>
+- Efficiency – <sub><sup>Time Behaviour, Ressource Behaviour</sup></sub>
+- Maintainability – <sub><sup>Analyzability, Changeability, Stability, Testability</sup></sub>
+- Portability – <sub><sup>Adaptability, Conformance, Co-existence, Installability, Replaceability</sup></sub>
+
+[Wikipedia – ISO/IEC 9126](https://en.wikipedia.org/wiki/ISO/IEC_9126)
+
+## The requirement iceberg
+
+.image img/the-requirement-iceberg.jpg _ 400
+
+## Customer & developer NFR's
+
+- Customer NFR's – <sub><sup>does not interest the developer</sup></sub>
+  - Reliability
+  - Usability
+  - Efficiency
+
+- Developer NFR's – <sub><sup>does not interest the customer</sup></sub>
+  - Maintainability
+  - Portability
+
+## The money part again – Fixing functionality
+
+- Report bug, fix it, easy
+- Usually cheap
+
+.image img/giphy/NaboQwhxK3gMU.gif
+
+## The money part again – Customer NFR's
+
+- Strikes late
+- Concepts ⇒ Expensive to fix
+
+.image img/giphy/3o6MbtelsDZdsbFB7i.gif
+
+## The money part again – Developer NFR's
+
+- Critical
+- Strikes very, very late
+- Customer does not even notice
+- Slow development, no new features, a lot of bugs with side effects
+
+.image img/giphy/wH4eUplPdKjTU4WuLP.gif _ 300
+
+## Why is it so damn hard?
+
+- Product owner
+- Knows the domain
+- NFR's are technically – <sub><sup>scalability, CQRS & eventual consistency, etc...</sup></sub>
+- Developers are responsible – <sub><sup>software architect, or someone who is aware of the NFR's</sup></sub>
+  - ISO/IEC 9126
+
+## Quality Attribute Scenarios
+
+- Define an **artifact** within an **environment** – <sub><sup>online shop within a mobile data speed of edge</sup></sub>
+- Stimulus on the system and its source – <sub><sup>user visits the products detail page</sup></sub>
+- System response and a measurable metric – <sub><sup>product details page in less than a second</sup></sub>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Visit product details on a slowly mobile connection speed (edge)</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Source of Stimulus</td>
+      <td>A customer</td>
+    </tr>
+    <tr>
+      <td>Stimulus</td>
+      <td>buy a bag</td>
+    </tr>
+    <tr>
+      <td>Environment</td>
+      <td>with a slowly mobile connection speed (edge)</td>
+    </tr>
+    <tr>
+      <td>Artifact</td>
+      <td>on the product details page</td>
+    </tr>
+    <tr>
+      <td>Response</td>
+      <td>and it is added to the basket</td>
+    </tr>
+    <tr>
+      <td>Response Measure</td>
+      <td>in less then one second</td>
+    </tr>
+  </tbody>
+</table>
+
+## Types of QAS
+
+- Standalone
+- Attached – <sub><sup>to a ticket/ user story, relation to fuctional requirements</sup></sub>
